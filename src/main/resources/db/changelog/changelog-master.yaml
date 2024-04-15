@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/changeset/create-artist-table.yaml
+  - include:
+      file: db/changelog/changeset/create-song-table.yaml
+  - include:
+      file: db/changelog/changeset/update-artist-column.yaml
+#  - include:
+#      file: db/changelog/changeset/fill-artist.sql
+

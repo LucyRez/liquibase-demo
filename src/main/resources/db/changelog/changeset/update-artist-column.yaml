@@ -1,0 +1,15 @@
+databaseChangeLog:
+  - changeSet:
+      id: update-column-artist
+      author: lucy
+      changes:
+        - renameColumn:
+            tableName: artist
+            newColumnName: fullname
+            oldColumnName: name
+
+      rollback:
+        - renameColumn:
+            tableName: artist
+            newColumnName: name
+            oldColumnName: fullname
